@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grano APP - Seu planejamento financeiro</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<style>
+    .hover-separate .bolinha-vermelha {
+        transition: all 0.3s ease;
+    }
+
+    .hover-separate:hover .bolinha-vermelha {
+        transform: translateX(0.875rem);
+    }
+
+    .editable-text:focus {
+        outline: none;
+    }
+</style>
+
+<body class="font-satoshi flex gap-52">
+    <div class="w-full sm:w-8/12 md:w-6/12 lg:w-5/12 ml-8 sm:ml-20 md:ml-40 lg:ml-52 ">
+        <div class="pt-8">
+            <!-- GRANO TITULO -->
+            <a href="http://127.0.0.1:3000/src/index.html" class="flex items-center text-5xl font-bold hover-separate">
+                gran
+                <div class="pb-4">
+                    <span class="absolute w-7 h-7 bg-granoGreen rounded-full bolinha-verde"></span>
+                    <span class="absolute w-7 h-7 bg-granoGreen rounded-full bolinha-vermelha"></span>
+                </div>
+            </a>
+        </div>
+        <div class="pt-48">
+            <div class="font-bold text-4xl">
+                Bem vindo à Grano!
+            </div>
+            <div class="text-granogrey text-xs pb-8">Inscreva-se e comece a planejar seus objetivos.</div>
+            <div class="border">
+                <button class="p-2 flex items-center mx-auto gap-2">
+                    <img src="/imgs/google-logo.png" alt="" class="size-4">
+                    <div class="text-sm font-bold">Continuar com google</div>
+                </button>
+            </div>
+            <div class="pt-8 flex items-center gap-10 mx-auto">
+                <div class="w-36 bg-gray-400 h-[1px] rounded"></div>
+                <div class="text-xs">OU</div>
+                <div class="w-36 bg-gray-400 h-[1px] rounded"></div>
+            </div>
+            <div class="flex-col flex pt-8 gap-4 pb-4">
+                <input type="text" placeholder="Seu e-mail" class="text-sm input-icon p-2 border w-full">
+                <input type="password" placeholder="Sua senha" class="text-sm input-icon p-2 border w-full">
+            </div>
+            <div class="border bg-blue-500">
+                <button class="p-2 flex items-center mx-auto gap-2">
+                    <div class="text-sm font-medium text-white">Continuar</div>
+                </button>
+            </div>
+            <div class="flex gap-1 pt-4 text-xs font-medium">
+                <div>Já possui conta?</div>
+                <button class="text-blue-400 pb-4">Entre!</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-granoGreen w-full min-h-screen flex flex-col pt-28 px-20">
+        
+    </div>
+
+
+
+
+</body>
+
+</html>
